@@ -1,0 +1,18 @@
+apiVersion: 0.1.0
+environments:
+  default:
+    destination:
+      namespace: ks-dev
+      server: https://api.k8s.clustre.org
+    k8sVersion: v1.8.7
+    path: default
+kind: ksonnet.io/app
+name: dwk8s
+registries:
+  incubator:
+    gitVersion:
+      commitSha: 40285d8a14f1ac5787e405e1023cf0c07f6aa28c
+      refSpec: master
+    protocol: github
+    uri: github.com/ksonnet/parts/tree/master/incubator
+version: 0.0.1
