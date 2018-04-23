@@ -1,5 +1,6 @@
 package com.github.stantonk.dwk8s;
 
+import com.github.stantonk.dwk8s.resources.Greeter;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -23,7 +24,7 @@ public class DropwizardK8sExampleApplication extends Application<DropwizardK8sEx
     @Override
     public void run(final DropwizardK8sExampleConfiguration configuration,
                     final Environment environment) {
-        // TODO: implement application
+        environment.jersey().register(new Greeter());
     }
 
 }

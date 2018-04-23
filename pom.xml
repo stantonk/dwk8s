@@ -75,6 +75,9 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
+                        <configuration>
+                            <finalName>dwk8s</finalName>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -126,6 +129,9 @@
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.25.2</version>
+                <configuration>
+                    <registry>829189492239.dkr.ecr.us-east-1.amazonaws.com</registry>
+                </configuration>
             </plugin>
         </plugins>
     </build>
