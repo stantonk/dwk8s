@@ -17,6 +17,9 @@ public class Greeter {
     @GET
     @Timed
     public Greeting greet(@QueryParam("name") Optional<String> name) {
-        return new Greeting("Hello, " + name.orElse("Stranger") + "!");
+        return new Greeting(String.format(
+                "Hello from %s, %s!",
+                System.getenv("HOSTNAME"),
+                name.orElse("Friend")));
     }
 }

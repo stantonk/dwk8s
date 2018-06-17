@@ -11,7 +11,7 @@
 
     <groupId>com.github.stantonk</groupId>
     <artifactId>dwk8s</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3</version>
     <packaging>jar</packaging>
 
     <name>DropwizardK8sExample</name>

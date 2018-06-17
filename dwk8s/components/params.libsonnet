@@ -10,7 +10,7 @@
       containerPort: 8080,
       image: "829189492239.dkr.ecr.us-east-1.amazonaws.com/stantonk/dwk8s:0.0.2",
       name: "dwk8s",
-      replicas: 2,
+      replicas: 8,
       servicePort: 80,
       type: "LoadBalancer",
     },
