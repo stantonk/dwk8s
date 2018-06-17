@@ -1,11 +1,15 @@
-# DropwizardK8sExample
+# Dropwizard, Ksonnet, Kubernetes, fabric8 docker-maven-plugin
 
-How to start the DropwizardK8sExample application
----
+This is an example project that stitches together a containerized Dropwizard
+REST API service that automatically builds a container and pushes it
+to AWS Elastic Container Registry (ECR) during the normal `mvn` build
+lifecycle (`mvn deploy`).
 
-1. Run `mvn clean install` to build your application
-1. Start application with `java -jar target/dwk8s-0.0.1-SNAPSHOT.jar server config.yml`
-1. To check that your application is running enter url `http://localhost:8080`
+
+It also uses [Ksonnet](https://ksonnet.io/) to represent the Kubernetes service configuration,
+so you can deploy the containerized Dropwizard Service to a k8s cluster running
+in your same AWS account.
+
 
 Health Check
 ---
